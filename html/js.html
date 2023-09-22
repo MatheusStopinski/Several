@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/js.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notes</title>
+</head>
+
+<body>
+  
+    <header>
+      <h1>JavaScript Notes</h1>
+    </header>
+  
+    <main>
+      <section class="note yellow">
+        <h2 class="titulo1">Variáveis</h2>
+        <ul>
+      <li class="linha">
+        <h3 id="colorH">var:</h3>
+        <p>A declaração <code>var</code> é reatribuída e redeclarada.</p>
+      </li>
+      <li class="linha">
+        <h3 id="colorH">let:</h3>
+        <p>A declaração <code>let</code> é reatribuída, mas não pode ser redeclarada</p>
+      </li>
+      <li class="linha">
+        <h3 id="colorH">const:</h3>
+        <p>A declaração <code>const</code> não pode ser reatribuída ou redeclarada.</p>
+      </li>
+    </ul>
+      </section>
+  
+      <section class="note green">
+        <h2 class="titulo2">Estruturas condicionais</h2>
+        <ul class="disc">
+          <li>
+          <p id="larger">if, else if, else, switch e case.</p>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="note red">
+        <h2 class="titulo3">Loops</h2>
+        <ul>
+      <li class="square">
+        <p>( <strong>for</strong> ) Usado quando sabemos exatamente quantas vezes queremos que o código seja repetido.</p>
+      </li>
+      <li class="square">
+        <p>( <strong>while</strong> ) É mais adequado quando a condição é simples e pode ser avaliada antes do loop iniciar</p>
+      </li>
+      <li class="square">
+        <p>( <strong>do..while</strong> ) Útil quando você precisa garantir que o código dentro do loop seja executado pelo menos uma vez.</p>
+      </li>
+    </ul>
+      </section>
+      
+      <section class="note purple">
+        <h2 class="titulo4">Função</h2>
+        <ul>
+          <h3 class="left"><strong class="borda">function:</strong></h3>
+      <li class="circle">      
+        <p>As funções são fundamentais no JavaScript, permitindo criar código reutilizável e modular, o que ajuda a organizar melhor a lógica do programa e facilita a manutenção do código. Elas são amplamente utilizadas para realizar diversas tarefas, desde cálculos matemáticos até manipulação do DOM e requisições assíncronas.</p>
+      </li>    
+    </ul>
+      </section>
+  
+      <section class="note blue">
+        <h2 class="titulo5">Eventos</h2>
+        <p class="colorP">É sobre interatividade, sua sintaxe é a seguinte: <br>elemento.<b class="style">addEventListener</b>(evento, função, useCapture);
+           </p>            
+        <ul class="upper-roman">
+          <li>
+          <p id="bigger"> <b class="style2">elemento:</b> É o elemento HTML ao qual você deseja associar o evento. Pode ser um elemento que você selecionou usando document.querySelector, por exemplo.</p>
+          </li>
+          <li>
+          <p id="bigger"> <b class="style2">evento:</b> É uma string que representa o tipo de evento que você deseja escutar. Por exemplo, para escutar um clique do mouse, você usa "click", para escutar o carregamento completo de uma página, você usa "load", e assim por diante já que existem muitos tipos diferentes...</p>
+          </li>
+           <li>
+          <p id="bigger"> <b class="style2">função:</b> É a função que será executada quando o evento ocorrer. Essa função é conhecida como "event handler" ou "callback". Ela pode ser uma função existente ou uma função anônima definida diretamente no addEventListener.</p>
+          </li>
+           <li>
+          <p id="bigger"> <b class="style2">useCapture:</b> É um parâmetro opcional que indica se o evento deve ser capturado na fase de captura ou na fase de bubbling (propagação)</p>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="note silver">
+        <h2 class="titulo6">
+  Tratamento de exceções</h2>
+        <ul>
+      <li class="decimal-leading-zero">
+        <p>"<strong>try</strong>" O bloco try é usado para envolver o código que pode gerar uma exceção. É onde você coloca o código que você deseja monitorar em busca de possíveis erros.</p>
+      </li>
+      <li class="decimal-leading-zero">
+        <p>"<strong>catch</strong>" O bloco catch é usado para lidar com a exceção caso ela seja lançada no bloco try. Se uma exceção ocorrer no bloco try, o fluxo do programa será desviado para o bloco catch, onde você pode tratar o erro, registrar informações ou tomar medidas apropriadas.</p>
+      </li>
+      <li class="decimal-leading-zero">
+        <p>"<strong>finally</strong>" O bloco finally é opcional e é usado para definir um bloco de código que será executado independentemente se uma exceção foi lançada ou não no bloco try. Isso permite que você coloque código que deve ser executado, independentemente de haver um erro ou não.</p>
+      </li>
+    </ul>
+      </section>
+      
+      <section class="note brown">
+        <h2 class="titulo7">Operadores aritméticos</h2>
+        <ul class="divPai">
+         <div class="divF0">
+      <li class="line">
+        <h3>+</h3>
+        <p>Somar.</p>       
+      </li>
+         </div> 
+         <div class="divF1">
+      <li class="line">
+        <h3>-</h3>
+        <p>Subtrair.</p>
+      </li>
+        </div>
+        <div class="divF2">
+      <li class="line">
+        <h3>*</h3>
+        <p>Multiplicar.</p>
+      </li>
+        </div>
+        <div class="divF3">
+      <li class="line">
+        <h3>/</h3>
+        <p>Dividir.</p>
+      </li>
+        </div>
+        <div class="divF4">
+      <li class="line">
+        <h3>%</h3>
+        <p>Resto da divisão</p>
+      </li>
+        </div>      
+    </ul>
+      </section>
+  
+      <section class="note darkorange">
+        <h2 class="titulo8">Operadores de comparação</h2>
+       <ul class="divP">
+         <div class="div0">
+      <li class="lineCy">
+        <h3 id="OperColor">==</h3>
+        <p>Igual.</p>       
+      </li>
+         </div> 
+         <div class="div1">
+      <li class="lineCy">
+        <h3 id="OperColor" class="operador">===</h3>
+        <p>Exatamente<br>igual.</p>
+      </li>
+        </div>
+        <div class="div2">
+      <li class="lineCy">
+        <h3 id="OperColor">!=</h3>
+        <p>Diferente.</p>
+      </li>
+        </div>
+        <div class="div3">
+      <li id="height" class="lineCy">
+        <h3 id="OperColor" class="operador">!==</h3>
+        <p>Diferente<br>mesmo.</p>
+      </li>
+        </div>
+        <div class="div4">
+      <li class="lineCy">
+        <h3 id="OperColor">></h3>
+        <p>Maior que</p>
+      </li>
+        </div>      
+         <div class="div5">
+      <li class="lineCy">
+        <h3 id="OperColor" class="operador">>=</h3>
+        <p>Maior ou <br>igual a</p>
+      </li>
+        </div>  
+         <div class="div6">
+      <li class="lineCy">
+        <h3 id="OperColor"><</h3>
+        <p>Menor que</p>
+      </li>
+        </div>  
+         <div class="div7">
+      <li class="lineCy">
+        <h3 id="OperColor" class="operador"><=</h3>
+        <p>Menor ou <br>igual a</p>
+      </li>
+        </div>
+    </ul>       
+      </section>
+  
+      <section class="note lemonchiffon">
+        <h2 class="titulo9">Operadores lógicos</h2>
+       <ul class="divPl">
+         <div class="div00">
+      <li class="lineC">
+       <p><b id="OperColor1">&nbsp;!&nbsp;</b> = NOT inverte <br> o valor de uma expressão.<br><br> Verdadeira,<br> o NOT a tornará falsa. <br><br> Falsa.<br>o NOT a tornará verdadeira.</p>       
+      </li>
+         </div> 
+         <div class="div01">
+      <li class="lineC">
+        <p><b id="OperColor1">&nbsp;| |&nbsp;</b> = OR<br><br>Se UMA das expressões<br>forem verdadeiras<br>retorna verdadeiro (true). <br><br>Mas se AMBAS forem falsas, <br>retorna falso (false).</p>
+      </li>
+        </div>
+        <div class="div02">
+      <li class="lineC">
+        <p><b id="OperColor1">&nbsp;&&&nbsp;</b> = AND 
+  <br><br>
+          somente se ambas as expressões <br>
+          forem verdadeiras. <br>
+          retorna verdadeiro (true) <br><br>
+          Caso contrário, <br>
+          ele retorna falso (false)</p>
+      </li>
+        </div>     
+    </ul>    
+      </section>
+      
+      <section class="note lime">
+        <h2 class="titulo10">Métodos de manipulação de strings</h2>
+          <ul>
+      <li class="armenian">
+        <p><strong class="S-lime">concat( )</strong> Este método é usado para concatenar (juntar) duas ou mais strings e retornar uma nova string resultante da concatenação.</p>
+      </li>
+      <li class="armenian">
+        <p><strong class="S-lime">indexOf( )</strong> retorna o índice de um determinado valor ou substring em uma string. Agora, se não for encontrada nenhuma ocorrência, ele retorna -1.</p>
+      </li>
+      <li class="armenian">
+        <p><strong class="S-lime">slice( )</strong> Extrai uma parte especifica da string, definida por índices, e retorna essa parte como uma nova string.</p>
+      </li>
+      <li class="armenian">
+        <p><strong class="S-lime">substring( )</strong> O método substring( ) funciona de maneira semelhante ao slice( ), mas não aceita índices que não existem. (7, 4) se o índice de fim for menor que o índice de início, ele os trocará automaticamente (4, 7).</p>
+      </li>
+      <li class="armenian">
+        <p><strong class="S-lime">replace( )</strong> Substituir uma substring por outra e retorna em uma nova string resultante. Ele substitui apenas a primeira ocorrência! Contúdo pode se usar a letra "g", tornando a expressão regular global e mudando todas as pelavras em comum. ( ex: const novaStr = str.replace(/mundo/g, 'universo');</p>
+      </li>
+      <li class="armenian">
+        <p><strong class="S-lime">split( )</strong> Nada mais do que separar cada palavra em vírgula, criando uma array ['olá', 'universo'].</p>
+      </li>
+      <li class="armenian">
+        <p>&nbsp;Esses são apenas alguns dos muitos métodos de manipulação de strings disponíveis em JavaScript.</p>
+      </li>
+    </ul>
+      </section>
+  
+      <section class="note teal">
+        <h2 class="titulo11">Métodos de manipulação de arrays</h2>
+  <ul>
+     <li class="lower-roman">
+        <p><strong class="S-teal">unshift( )</strong> Adiciona um ou mais elementos ao início do array.</p>
+      </li>
+      <li class="lower-roman">
+        <p><strong class="S-teal">push( )</strong> Adiciona um ou mais elementos ao final do array.</p>
+      </li> 
+      <li class="lower-roman">
+        <p><strong class="S-teal">shift( )</strong> Remove o primeiro elemento do array e o retorna.</p>
+      </li>
+      <li class="lower-roman">
+        <p><strong class="S-teal">pop( )</strong>  Remove o último elemento do array e o retorna.</p>
+      </li>    
+      <li class="lower-roman">
+        <p><strong class="S-teal">splice( )</strong> Altera o conteúdo de um array, adicionando ou removendo elementos no local especificado.</p>
+      </li>
+      <li class="lower-roman">
+        <p><strong class="S-teal">slice( )</strong> Retorna uma parte do array como um novo array, sem modificar o array original.</p>
+      </li>
+     <li class="lower-roman">
+        <p><strong class="S-teal">forEach( )</strong> Executa uma função para cada elemento do array.</p>
+      </li>
+     <li class="lower-roman">
+        <p><strong class="S-teal">concat( )</strong> Combina dois ou mais arrays para criar um novo array.</p>
+      </li>
+      <li class="lower-roman">
+        <p>&nbsp;Esses são alguns dos métodos mais utilizados para manipulação de arrays em JavaScript. Eles tornam mais fácil e eficiente trabalhar com listas de elementos, permitindo<i class="Color-I"> adicionar, remover e modificar </i>dados de maneira prática e funcional.</p>
+      </li>
+    </ul>
+      </section>
+  
+      <section class="note slategray">
+        <h2 class="titulo12">Métodos para trabalhar com datas e horas</h2>
+        <ul class="divPF">
+         <div class="divFinal">
+      <li class="lineF">
+       <p class="textF"><b id="OperColor2">&nbsp;Date&nbsp;</b> = Ele permite criar, manipular e formatar datas, bem como extrair informações específicas sobre datas e horas.</p> 
+       </li>
+         </div>
+        <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">Criando um objeto Date:</strong> Palavra-chave "new"  const dataAtual =<b class="ColorF"> new Date( );</b></p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">String que representa a data:</strong>  const dataString = new Date<b class="ColorF">('2023-07-01');</b></p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">Componentes da date:</strong> Ano, mês (0 a 11), dia, hora, minuto, segundo, milissegundo. const dataEspecifica = new Date<b class="ColorF">(2023, 6, 1, 12, 30, 0, 0);</b></p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">Manipulação de datas:</strong> Obter o dia, mês e ano da data, respectivamente. <b class="ColorF"> getDate( ), getMonth( ), getFullYear( ): </b> | |  Definir o dia, mês e ano da data, respectivamente.   <b class="ColorF">setDate( ), setMonth( ), setFullYear( ):</b></p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">Formatando datas:</strong> Palavra-chave "Intl.DateTimeFormat" para formatar datas de acordo com diferentes localidades. <br> <b class="ColorF">const formatoBR = new Intl.DateTimeFormat('pt-BR').format(data);</b></p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">getTime( )</strong> Retorna o valor numérico representando o número de milissegundos desde a meia-noite de 1º de janeiro de 1970 (UTC).</p>
+      </li>
+     <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">toISOString( )</strong> Retorna uma string no formato ISO (YYYY-MM-DDTHH:mm:ss.sssZ).</p>
+      </li>
+      <li class="DiscSabe">
+        <p class="textF"><strong class="S-teal">getDay( )</strong>  Retorna o dia da semana (0 para domingo, 1 para segunda-feira, etc.).</p>
+      </li>
+    </ul>    
+      </section>
+    </main>
+  
+    <footer>
+      <p>Todos os direitos reservados me dê um café &copy; Matheus Stopinski 2023</p>
+    </footer>
+    <script src="../js/info.js"></script>
+  </body>
+  
+</html>
