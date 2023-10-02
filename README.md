@@ -1,0 +1,9 @@
+ <img align="center" src="https://i.imgur.com/Td7hnNu.png" alt="Imagem demostrativa: Anotação do JS. Parte 1">
+ <img align="center" src="https://i.imgur.com/ni0rHwM.png" alt="Imagem demostrativa: Anotação do JS. Parte 2">
+ <img align="center" src="https://i.imgur.com/iolmxoa.png" alt="Imagem demostrativa: Anotação do JS. Parte 3">
+ <img align="center" src="https://i.imgur.com/OWKVtbQ.png" alt="Imagem demostrativa: Anotação do JS. Parte 4">
+ <img align="center" src="https://i.imgur.com/mGoOJw1.png" alt="Imagem demostrativa: Anotação do JS. Parte 5">
+ <img align="center" src="https://i.imgur.com/OQ0nrjx.png" alt="Imagem demostrativa: Anotação do JS. Parte 6">
+ <img align="center" src="https://i.imgur.com/RBHKfKS.png" alt="Imagem demostrativa: Anotação do JS. Parte 7">
+ <img align="center" src="https://i.imgur.com/Oo9pmQi.png" alt="Imagem demostrativa: Anotação do JS. Parte 8">
+ <img align="center" src="https://i.imgur.com/oEJiAqH.png" alt="Imagem demostrativa: Anotação do JS. Parte 9">
