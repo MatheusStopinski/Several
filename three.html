@@ -7,12 +7,19 @@
             background-color: #010101;
         }
 
+        .center {        
+            display: flex;    
+            justify-content: center;
+            align-items: center;
+        }
+
         .box {
             background-color: royalblue;
-            border-radius: 10px;
-            margin-left: 4px;
+            border-radius: 10px;            
             margin-top: 20px;
-            width: 552px;
+            margin-right: 20px;
+            margin-bottom: 60px;
+            width: 813px;
             height: 48px;
             display: flex;
             justify-content: center;
@@ -29,20 +36,76 @@
             margin-left: 4px;
             display: grid;
             /* grid-template-columns: 70px 70px 70px 70px 70px 70px 70px; Mais agilizado com repeat */
-            grid-template-columns: 70px minmax(70px, 37%) 70px;            
+            grid-template-columns: 70px 70px 70px;            
             /* grid-template-columns: repeat(7, 70px) 50%; pra ultima ser 50% */
             /* grid-template-columns: repeat(7, 70px);*/             
             /* grid-template-rows: 70px 70px 70px 70px; */
-            grid-auto-rows: 120px;
-            grid-column-gap: 10px;
+            grid-auto-rows: 70px;
+            grid-column-gap: -90px;
             grid-row-gap: 10px;
             /* grid-gap: 10px; => SERVERIA PARA OS DOIS, MAIS PRATICO ( grid-column-gap 
 grid-row-gap */
+            justify-content: center;
+            justify-items: center;
         }
 
         .container div {
             background-color: royalblue;
             padding: 1rem;
+            width: 62px;
+            border: 2px ridge white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            color: #fff;
+            font-weight: 800;
+            font-size: 23px;         
+        }
+
+        .container div:nth-child(1){
+            align-self: end;
+            justify-self: start;
+        }
+        
+        .container div:nth-child(2){
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .container div:nth-child(3){
+            align-self: end;
+            justify-self: end;
+        }
+        
+        .container div:nth-child(4){
+            align-self: end;
+            justify-self: start;
+        }
+        
+        .container div:nth-child(5){
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .container div:nth-child(6){
+            align-self: end;
+            justify-self: end;
+        }
+        
+        .container div:nth-child(7){
+            align-self: end;
+            justify-self: start;
+        }
+        
+        .container div:nth-child(8){
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .container div:nth-child(9){
+            align-self: end;
+            justify-self: end;
         }
 
         .container div:nth-child(even) {
@@ -56,9 +119,11 @@ grid-row-gap */
 
 <body>
 
+<div class="center">
     <div class="box">
-        <h1>Nice to meet you "Grid"</h1>
+        <h1>&nbsp;I imagine this with js, how would it look...</h1>
     </div>
+</div>
 
     <div class="container">
 
@@ -69,7 +134,8 @@ grid-row-gap */
         <div>5</div>
         <div>6</div>
         <div>7</div>
-        <div>8</div> 
+        <div>8</div>        
+        <div>9</div> 
 
     </div>
 </body>
