@@ -5,4 +5,4 @@
 <img align="center" src="https://i.imgur.com/cS06L8j.png" alt="Grid model 5">
 <img align="center" src="https://i.imgur.com/yoEyxTq.png" alt="Grid 6 Template-areas">
 <img align="center" src="https://i.imgur.com/N2uelsi.png" alt="Grid 7 auto-fit">
-<img align="center" src="" alt="Grid 7 auto-fit">
+<img align="center" src="" alt="">
