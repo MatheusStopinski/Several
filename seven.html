@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 7 auto-fit</title>
+   <style>
+body {
+  background: blueviolet;
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px); /* Respeitara a medida do tamplate areas */
+  grid-template-rows: repeat(5, 1fr);  
+  color: white;
+  grid-gap: 1px;
+  grid-template-areas: 
+    "nav  nav  nav  nav nav"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "footer footer footer footer footer";
+}
+
+header {
+  grid-area: nav; 
+/* QualquerNome */  
+}
+
+footer {
+  grid-area: footer; 
+/* QualquerNome */  
+}
+
+aside {
+  grid-area: aside; 
+/* QualquerNome */  
+}
+
+main {
+  grid-area: main; 
+/* QualquerNome */  
+}
+
+.container * {
+  background-color: #3C3383;
+  padding: 1rem;  
+}
+
+.container * :nth-child(even){
+  background-color: #1d213d;
+}
+
+
+   </style>
+</head>
+<body>
+      <div class="container">
+        <header>NAV</header>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>FOOTER</footer>
+      </div>      
+</body>
+</html>
