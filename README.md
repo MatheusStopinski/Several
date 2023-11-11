@@ -3,6 +3,7 @@
 <img align="center" src="https://i.imgur.com/dFSD7am.png" alt="Grid model 3">
 <img align="center" src="https://i.imgur.com/JEdt7ds.png" alt="Grid model 4">
 <img align="center" src="https://i.imgur.com/cS06L8j.png" alt="Grid model 5">
-<img align="center" src="https://i.imgur.com/yoEyxTq.png" alt="Grid 6 Template-areas">
-<img align="center" src="https://i.imgur.com/N2uelsi.png" alt="Grid 7 auto-fit">
-<img align="center" src="" alt="">
+<img align="center" src="https://i.imgur.com/9Xktby5.png" alt="Grid model 8">
+<img align="center" src="https://i.imgur.com/yoEyxTq.png" alt="Grid model 6 Template-areas">
+<img align="center" src="https://i.imgur.com/N2uelsi.png" alt="Grid model 7 auto-fit">
+
