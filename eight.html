@@ -1,0 +1,72 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Grid 8</title>
+        <style>
+
+            body {
+  background-color: #1d202399;
+}
+
+.l-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(6, 1fr); /* total width: 1fr repeat(4, minmax(auto, 200px)) 1fr */
+        grid-template-rows: .5fr 2fr .5fr .5fr;
+        grid-template-areas:
+            "header header     header     header    header    header"
+            ".      main       main       main      sidebar   .     "
+            ".      aside-main aside-main aside-sec aside-sec .     "
+            "footer footer     footer     footer    footer    footer"
+        ;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1200px; /* total width: comment this */
+}
+
+.l-header {
+    background-color: #1d2023;
+    grid-area: header;
+}
+
+.l-main {
+    background-color: #37a89b;
+    grid-area: main;
+}
+
+.l-sidebar {
+    background-color: yellow;
+    grid-area: sidebar;
+}
+
+.l-aside-main {
+    background-color: #37364e;
+    grid-area: aside-main;
+}
+
+.l-aside-sec {
+    background-color: #37364e;
+    grid-area: aside-sec;
+}
+
+.l-footer {
+    background-color: #1d2023;
+    grid-area: footer;
+}
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="l-wrapper">
+            <header class="l-header"></header>
+            <main class="l-main"></main>
+            <aside class="l-sidebar"></aside>
+            <aside class="l-aside-main"></aside>
+            <aside class="l-aside-sec"></aside>
+            <footer class="l-footer"></footer>
+        </div>
+    </body>
+</html>
