@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 10  Pr&aacute;tica</title> 
+<style>
+
+@media (min-width: 48em) { /* 768px */
+    .l-wrapper {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: .5rem;
+        grid-template-columns: [full-start] 1fr [container-start] repeat(6, 1fr) [container-end] 1fr [full-end];
+        height: 100vh;
+    }
+}
+
+.l-wrapper > * {    
+    padding: 1rem;
+    margin: .5rem 0;
+}
+
+@media (min-width: 48em) { /* 768px */
+    .l-wrapper > * {
+        grid-column: container;
+        margin: 0;
+    }
+}
+
+.l-header {
+    background-color: skyblue;
+    margin-top: 0;
+}
+
+.l-hero {
+    background-color: mediumseagreen;
+    height: 250px;
+}
+
+.l-highlights {
+    display: grid;
+    grid-gap: .5rem;
+    padding: 0;
+}
+
+@media (min-width: 48em) { /* 768px */
+    .l-highlights {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-auto-rows: 150px;
+    }
+}
+
+.c-highlight {
+    background-color: coral;
+    min-height: 100px;
+}
+
+.l-main-content {
+    background-color: royalblue;
+}
+
+.l-aside {
+    background-color: goldenrod;
+    padding: 0;
+}
+
+.l-footer {
+    background-color: skyblue;
+    margin-bottom: 0;
+}
+
+.u-grid-full {
+    grid-column: full;
+}
+
+.u-expand-left {
+    grid-column: full / container;
+}
+
+</style>
+</head>
+
+<body>
+        
+    <main class="l-wrapper">
+        <header class="l-header u-grid-full"></header>
+        
+        <div class="l-hero"></div>
+        
+        <section class="l-highlights">
+            <article class="c-highlight"></article>
+            <article class="c-highlight"></article>
+            <article class="c-highlight"></article>
+            <article class="c-highlight"></article>
+            <article class="c-highlight"></article>
+        </section>
+        
+        <main class="l-main-content"></main>
+        
+        <aside class="l-aside u-expand-left"></aside>
+        
+        <footer class="l-footer u-grid-full"></footer>
+    </main>
+
+</body>
+</html>
