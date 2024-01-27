@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 9</title>
+    <style>
+body {
+  background: blueviolet;
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: repeat(8, 410px);
+  color: white;
+  grid-gap: 1px;
+  grid-template-areas: 
+    " . one . "
+    " . two . "
+    " . three . "
+    " . four . "
+    " . five . "
+    " . six . "
+    " . seven . "
+    " . eight . ";
+}
+
+header {
+  grid-area: one; 
+/* QualquerNome */  
+}
+
+main {
+  grid-area: two; 
+/* QualquerNome */  
+}
+
+.three {
+  grid-area: three; 
+/* QualquerNome */  
+}
+
+.four {
+  grid-area: four; 
+/* QualquerNome */  
+}
+.five {
+  grid-area: five; 
+/* QualquerNome */  
+}
+.six {
+  grid-area: six; 
+/* QualquerNome */  
+}
+.seven {
+  grid-area: seven; 
+/* QualquerNome */  
+}
+.eight {
+  grid-area: eight; 
+/* QualquerNome */  
+}
+
+.container * {
+  background-color: #3C3383;
+  padding: 1rem;  
+}
+
+.container * :nth-child(even){
+  background-color: #1d213d;
+}
+    </style>
+</head>
+<body>
+        
+    <div class="container">
+        <header>1</header>
+        <main>2</main>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+      </div>
+
+</body>
+</html>
